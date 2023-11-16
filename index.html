@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>colligram-continental</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+  <style>
+    .checkbox-menu {
+visibility: hidden;
+      float: right;
+      height: 80px;
+      position: fixed;
+      margin-top: 3px;
+      top: 0;
+      right: 0;
+    }
+    .menu_icon {
+      cursor: pointer;
+      position: fixed;
+      float: right;
+      color: red;
+      margin-top: 3px;
+      top: 0;
+      right: 0;
+    }
+   
+  </style>
+
+</head>
+
+<body id="home">
+
+
+
+
+
+  <img class="logo" src="images/logo.png" alt="logo" width="100" height="80">
+
+  <header>
+
+    <nav class="navbar">
+      <input class="checkbox-menu" type="checkbox" id="menu_label" />
+      <label for="menu_label" class="menu_icon">menu<svg xmlns="http://www.w3.org/2000/svg" 
+          fill="green" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg></label>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#second_div">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume_preview.html">Preview cv</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!--image photo-->
+
+    <div class="image-flex">
+      <div class="first_div">
+        <h1 class="me">Hi, am <span>C</span>ollins Otieno<br> <span id="edit"> Front end web developer</span> </h1>
+
+
+        <div class="buttonblock">
+          <button onclick="hire_me()" class="hire_me"><a href="#hire_me">HIRE ME</a></button>
+          <button><a href="collins otieno_resume.pdf">DOWNLOAD CV</a></button>
+        </div>
+
+      </div>
+      <div class="second-div-me">
+        <img src="images/me_2.png" alt="my_photo " loading="eager">
+      </div>
+    </div>
+
+    <!--second div-->
+    <div class="second_div" id="second_div">
+      <div class="second_image">
+        <img class="second_image" src="images/IMG_20231104_214244_830.jpg" alt="desc" loading="eager">
+      </div>
+      <div class="description">
+        <h2> About me</h2>
+        <p>Architect of modern web development</p>
+        <p>
+
+          Am a trailblazing website developer, whose prowess in coding transforms the digital landscape into
+          extraordinary
+          virtual realms;<br>
+          Fueled by a zeal for excellence, client satisfaction is guaranteed.<br> As Infotech Innovator is poised to
+          deliver an impeccable user experience, creating a captivating interface that will leave you in awe.
+        </p>
+        <p>EMPLOYMENT:<br>Open for employment</p>
+        <p>NAME:<br>Collins Otieno</p>
+      </div>
+
+    </div>
+    <!--skills-->
+
+    <div id="skills" class="skills">
+
+
+      <div class="skills description">
+        <h3>skills </h3><br>
+        <P class="lang">LANGUAGES I SPEAK
+        </p>
+
+        <P><span class="before">- Front-End Technologies: </span>
+          HTML5, CSS3, JavaScript (ES6+), Bootstrap</P><br>
+        <P><span class="before"> - Back-End Technologies: </span> PHP (Laravel, CodeIgniter)</P><br>
+        <P><span class="before"> - Database Systems:</span>MySQL</P><br>
+        <P><span class="before"> - Version Control Systems:</span> Git, GitHub</P><br>
+        <P>
+          - Responsive Web Design<br>
+          - Problem-Solving and Debugging<br>
+          - Strong Understanding of Web Technologies and Standards<br>
+        </P>
+      </div>
+      <!--marquee-->
+
+      <div class="marquee">
+        <img src="elephant_load.png" alt="php,javascript,html,css,bootstrap,sql">
+
+      </div>
+      <!--marquee-->
+    </div>
+
+
+    <!--contacts-->
+
+    <div class="contact" id="contact">
+      <h4>Contact</h4>
+      <p>NAME:Collins Otieno</p>
+      <p>TEL:+254743686810</p>
+      <p>EMAIL:Locozoombady@gmail.com &nbsp / &nbsp lenzcapital1@gmail.com</p>
+
+    </div>
+
+    <!--new code-->
+
+
+    <fieldset class="section" id="hire_me">
+      <legend>LETS TALK </legend>
+
+      <form action="#" method="post">
+        <div class="inline">
+
+          <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+          <label for="reg-log"></label>
+
+
+          <div class="card-3d-wrap mx-auto">
+            <div class="card-3d-wrapper">
+
+              <!-- FRIEND-->
+              <div class="card-front">
+                <div class="center-wrap">
+                  <h6 class="mb-4 pb-3">AM A RECRUITER</h6>
+                  <input type="text" name="recruiter_logname" class="form-style" placeholder="Your Full Name please"
+                    id="recruiter_logname" required><br><br>
+                  <input type="tel" name="telephone" class="form-style" placeholder="phone number"
+                    id="recruiter_telephone" max="14"><br><br>
+                  <input type="number" name="budget" class="form-style" placeholder=" projects budget (optional)" id=""
+                    max="14"><br><br>
+                  <input type="email" name="recruiter_logemail" class="form-style" placeholder="Your Email"
+                    id="recruiter_logemail" required><br><br>
+                  <input required type="text" name="recruiter_mail_subject" value=""
+                    placeholder="recruitment info" /><br><br>
+                  <textarea name="recruiter_message" id="recruiter_textarea" rows="8" cols="40"
+                    placeholder="Hi there! Feel free to leave me a message here. I'll get back to you soon. If it's urgent, please consider calling directly."
+                    required></textarea><br><br>
+                  <button type="submit" class="btn mt-4">Send message</button>
+                </div>
+              </div>
+
+              <!-- friends-->
+              <div class="card-back">
+                <div class="center-wrap">
+
+
+                  <h6 class="mb-4 pb-3">JUST A FRIEND</h6>
+                  <label for="recruiter_textarea">Let's talk</label><br>
+
+
+
+                  <input type="text" name="friend_logname" class="form-style" placeholder="Tell me your user_name"
+                    id="friend_logname"><br><br>
+
+                  <textarea name="friend_message" id="friend_textarea" rows="8" cols="40"
+                    placeholder="Type the message here, I guess you wanna buy me a coffee"></textarea><br><br><br>
+                  <!--buy me a coffee-->
+                  <div class="coffee">
+                    <label for="coffee"> </label>
+                    <a onclick="coffee()" id="coffee" href="https://www.buymeacoffee.com/colligram"><img
+                        src="coffee.png " alt="coffee" width="110" height="120"></a>
+                  </div>
+                  <!--buy me a  coffee-->
+
+
+
+
+                  <button type="submit" class="btn mt-4">Send message</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+      </form>
+
+      </div>
+    </fieldset>
+  </main>
+  <br><br><br><br><br>
+  <footer>
+    <p>Copyright &copy; 2023 | colligram-continental | All rights reserved
+    </p>
+  </footer>
+  <script>
+    function hire_me() {
+      alert("am glad now we can talk business");
+    }
+
+    function coffee() {
+      alert("one supporter is worth a thousand followers,proceed and lets keep the server alive,");
+    }
+  </script>
+</body>
+
+</html>
