@@ -136,9 +136,7 @@ nav {
   margin-top: 12% !important;
 }
 
-span {
-  color: red;
-}
+
 
 .second-div-me {
   margin-right: 5%;
@@ -643,6 +641,7 @@ input[type="text"],
   transform: rotateY(180deg);
 }
 
+
 .checkbox:checked~.card-3d-wrap .card-3d-wrapper {
   transform: rotateY(180deg);
 }
@@ -689,24 +688,6 @@ input[type="text"],
   box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
 }
 
-.coffee {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: #ffeba7;
-  border-radius: 50%;
-  bottom: 10px;
-  right: 10px;
-  z-index: 999;
-}
-
-
-
-
 
 /*media screens*/
 /* Styles for larger screens */
@@ -715,19 +696,20 @@ input[type="text"],
   .first_div,
   .second-div-me {
     width: calc(50% - 20px);
+    
   }
-  .menu_icon {
-       display:none ;
-      }
+  .checkbox-menu-2,.menu_icon_2{
+    display: none;
+  }
+  
 }
-
-
 
 
 /* Styles for.checkbox_1:checked ~ul small phones (.checkbox:checked~) */
 @media only screen and (max-width: 767px) {
   li {
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 15px;
   }
 
   .logo {
@@ -741,41 +723,79 @@ input[type="text"],
   }
 
 
-
+/* the html checkbox is checked by default:
+  1.on the default checked state it hides the unordered list but when clicked it uchecks the button and the conditions returns false*/
   ul {
-    box-sizing: border-box;
-    font-size: 15px;
-
+    width: 170px;
+      min-height: 300px;
+      padding-top: 20px;
+     
     display: block;
-
+     padding: 0;
+      font-size: 15px;
+          overflow: hidden;
+      transition: 500ms ease;
+     border: 3px solid blue;
     background: url("menu.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
 
+  
+  }
+
+
+  .checkbox-menu-2:checked~ul {
     width: 0px;
     height: 0px;
     margin-right: 0;
     margin-top: 40px;
     overflow: hidden;
     transition: 1500ms ease;
-  }
-
-  .menu_icon {
-    
-    margin-top: 3px;
-    
-  }
-
-  .checkbox-menu:checked~ul {
-    width: 170px;
-    min-height: 300px;
-    padding-top: 20px;
-    border: 3px solid blue;
+     border: none;
 
   }
-
-
-
-
+ 
 }
+
+
+
+.coffee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  background:transparent;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  
+}
+span{
+  color: red ;
+}
+.coffee:hover {  
+  box-shadow: 4px 4px 5px 8px plum,-5px -4px 5px 7px plum;
+  transform: rotate(360deg);
+  transition:1s cubic-bezier(.5,-.75,.7,2);
+}
+/* menu icons */
+.class_close{
+  color: yellow ;
+  cursor: pointer;
+  border: 2px solid green;
+  margin-right: 20px;
+  margin-top: 5px;
+  
+}
+.menu_icon_2{
+  color:green;
+  font-size: 20px;
+  
+}
+
+
