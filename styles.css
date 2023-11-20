@@ -619,30 +619,10 @@ h4 {
 }
 
 
-
-.coffee {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100px;
-  height: 200px;
-  background:transparent;
-  border-radius: 50%;
-  bottom: 10px;
-  right: 10px;
-  z-index: 999;
-  
-}
 span{
   color: red ;
 }
-.coffee:hover {  
-  box-shadow: 4px 4px 5px 8px plum,-5px -4px 5px 7px plum;
-  transform: rotate(360deg);
-  transition:1s cubic-bezier(.5,-.75,.7,2);
-}
+
 /* menu icons */
 .class_close{
   color: yellow ;
