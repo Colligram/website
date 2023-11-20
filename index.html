@@ -8,6 +8,7 @@
   <title>colligram-continental</title>
   <link rel="stylesheet" href="styles.css" type="text/css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
   <style>
@@ -19,39 +20,26 @@ visibility: hidden;
       margin-top: 3px;
       top: 0;
       right: 0;
-    }
-    .menu_icon {
-      cursor: pointer;
-      position: fixed;
-      float: right;
-      color: red;
-      margin-top: 3px;
-      top: 0;
-      right: 0;
-    }
+    }   
+  
    
   </style>
 
 </head>
 
 <body id="home">
-
-
-
-
-
-  <img class="logo" src="https://colligram--collinsochieng2.repl.co/images/logo.png" alt="logo" width="100" height="80">
+  <img class="logo" src="https://colligram--collinsochieng2.repl.co/images/logo.png" alt="logo" width="100" height="80" loading="eager" >
 
   <header>
 
     <nav class="navbar">
-      <input class="checkbox-menu" type="checkbox" id="menu_label" />
-      <label for="menu_label" class="menu_icon">menu<svg xmlns="http://www.w3.org/2000/svg" 
-          fill="green" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg></label>
-
+     
+    
+       <input class="checkbox-menu-2 checkbox-menu " type="checkbox" id="close_button" checked />
+      <label for="close_button" class="menu_icon_2"> menu <br> <span class="material-icons class_close">
+     menu
+      </span></label>    
+     
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#second_div">About</a></li>
@@ -62,15 +50,13 @@ visibility: hidden;
     </nav>
 
   </header>
-
   <main>
 
-    <!--image photo-->
+    <!--my photo-->
 
     <div class="image-flex">
       <div class="first_div">
         <h1 class="me">Hi, am <span>C</span>ollins Otieno<br> <span id="edit"> Front end web developer</span> </h1>
-
 
         <div class="buttonblock">
           <button onclick="hire_me()" class="hire_me"><a href="#hire_me">HIRE ME</a></button>
@@ -82,7 +68,7 @@ visibility: hidden;
         <img src="https://colligram--collinsochieng2.repl.co/images/me_2.png" alt="my_photo " loading="eager">
       </div>
     </div>
-
+    
     <!--second div-->
     <div class="second_div" id="second_div">
       <div class="second_image">
@@ -134,7 +120,6 @@ visibility: hidden;
       <!--marquee-->
     </div>
 
-
     <!--contacts-->
 
     <div class="contact" id="contact">
@@ -146,7 +131,6 @@ visibility: hidden;
     </div>
 
     <!--new code-->
-
 
     <fieldset class="section" id="hire_me">
       <legend>LETS TALK </legend>
@@ -191,7 +175,6 @@ visibility: hidden;
                   <label for="recruiter_textarea">Let's talk</label><br>
 
 
-
                   <input type="text" name="friend_logname" class="form-style" placeholder="Tell me your user_name"
                     id="friend_logname"><br><br>
 
@@ -199,15 +182,11 @@ visibility: hidden;
                     placeholder="Type the message here, I guess you wanna buy me a coffee"></textarea><br><br><br>
                   <!--buy me a coffee-->
                   <div class="coffee">
-                    <label for="coffee"> </label>
-                    <a onclick="coffee()" id="coffee" href="https://www.buymeacoffee.com/colligram"><img
-                        src="images/coffee.png " alt="coffee" width="110" height="120"></a>
+                   
+                    <a onclick="coffee()" href="https://www.buymeacoffee.com/colligram"><img class="cofee_1"src="https://media0.giphy.com/media/513lZvPf6khjIQFibF/giphy.gif" alt="buy me a coffee" width="200" height="150"></a>
                   </div>
                   <!--buy me a  coffee-->
-
-
-
-
+              
                   <button type="submit" class="btn mt-4">Send message</button>
 
                 </div>
