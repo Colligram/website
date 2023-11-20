@@ -144,7 +144,7 @@ nav {
 }
 
 
-.buttonblock {
+.buttonblock { 
   display: flex;
   gap: 20px;
 }
@@ -504,147 +504,7 @@ h4 {
   margin-left: 33.3%;
 }
 
-/* END_CONTACT*/
-form {
-  margin-top: 5px;
-}
 
-input[type="text"],
-[type="tel"],
-[type="email"] {
-  outline: none;
-  border-radius: 5px;
-  min-width: 300px;
-}
-
-.section {
-  border: 3px solid red;
-  position: relative;
-  width: 100%;
-  justify-content: center;
-}
-
-.center-wrap {
-  float: center;
-  clear: both;
-  width: 100%;
-  padding: 0 35px;
-  top: 50%;
-  transform: translate3d(0, 10%, 35px) perspective(100px);
-}
-
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked) {
-  display: none;
-}
-
-.checkbox:checked+label {
-  position: relative;
-  display: block;
-  text-align: center;
-  width: 50px;
-  height: 16px;
-  border-radius: 8px;
-  border: 2px groove #240977;
-  padding: 0;
-  margin: 10px auto;
-  cursor: pointer;
-  background-color: #ff80ff;
-}
-
-.checkbox:not(:checked)+label {
-  position: relative;
-  display: block;
-  text-align: center;
-  width: 60px;
-  height: 16px;
-  border-radius: 8px;
-  border: 1px groove green;
-  padding: 0;
-  margin: 10px auto;
-  cursor: pointer;
-  background-color: greenyellow;
-}
-
-.checkbox:checked+label::before,
-.checkbox:not(:checked)+label::before {
-  position: absolute;
-
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  color: #000000;
-  background-color: #b075d7;
-  font-family: "unicons";
-  content: "\eb4f";
-  z-index: 20;
-  top: -10px;
-  left: -10px;
-  line-height: 36px;
-  text-align: center;
-  font-size: 24px;
-  transition: all 0.5s ease;
-}
-
-.checkbox:checked+label:before {
-  transform: translateX(44px) rotate(-270deg);
-}
-
-.card-3d-wrap {
-  position: relative;
-  width: 500px;
-  max-width: 100%;
-  height: 500px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  perspective: 800px;
-  margin-top: 60px;
-
-  left: 32.3%;
-}
-
-.card-3d-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  transition: all 600ms ease-out;
-  border: 3px solid blue;
-}
-
-.card-front,
-.card-back {
-  width: 100%;
-  height: 100%;
-  background-color: #2a2b38;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 300%;
-  position: absolute;
-  border-radius: 6px;
-  left: 0;
-  right: 0;
-  top: 0;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.card-back {
-  transform: rotateY(180deg);
-}
-
-
-.checkbox:checked~.card-3d-wrap .card-3d-wrapper {
-  transform: rotateY(180deg);
-}
 
 .btn {
   border-radius: 4px;
@@ -796,6 +656,177 @@ span{
   color:green;
   font-size: 20px;
   
+}
+/* new content */
+input[type="text"],
+[type="tel"],
+[type="email"] {
+  outline: none;
+  border-radius: 5px;
+  min-width: 200px;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+  display: none;
+
+}
+.checkbox:checked+label:before {
+  transform: translateX(44px) rotate(-270deg);
+}
+.checkbox:checked+label {
+  position: relative;
+  display: block;
+ 
+  width: 50px;
+  height: 16px;
+  border-radius: 8px;
+  border: 1px groove #08021a;
+  padding: 0;
+  margin: 10px auto;
+  cursor: pointer;
+  background-color: #ff80ff;
+}
+
+
+.checkbox:not(:checked)+label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 60px;
+  height: 16px;
+  border-radius: 8px;
+  border: 1px groove green;
+  padding: 0;
+  margin: 10px auto;
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+.checkbox:checked+label::before,
+.checkbox:not(:checked)+label::before {
+  position: absolute;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #000000;
+  background-color: #b075d7;
+  font-family: "unicons";
+  content: "\eb4f";
+  z-index: 20;
+  top: -10px;
+  left: -10px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+
+
+.checkbox:checked~.card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+}
+
+/* end reviewed */
+
+
+
+.center-wrap {
+  float: center;
+  clear: both;
+  width:700px;
+  padding: 1% 5%;
+margin: 0 10%;
+ border: 3px solid turquoise;
+  transform: translate3d(0, 10%, 35px) perspective(100px);
+}
+
+
+
+
+.card-3d-wrap {
+    
+  
+  position: relative;
+  
+
+  min-height: 400px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  perspective: 8000px;
+ margin-left: 5%;
+ margin-top: 20px;
+
+  
+}
+
+.card-3d-wrapper {
+  width: 900px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 600ms ease-out;
+  
+  padding: 0;
+}
+
+.card-front,
+.card-back {
+  width: 900px;
+  height: 400px;
+  background-color: #2a2b38;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 16px;
+  left: 0;
+  right: 0;
+  top: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.coffee{
+    box-shadow: 4px 4px 5px 8px white;
+}
+
+
+
+.coffee:hover {  
+  box-shadow: 4px 4px 5px 8px plum,-5px -4px 5px 7px plum;
+  transform: rotate(360deg);
+  transition:1s cubic-bezier(.5,-.75,.7,2);
+   background:transparent;
+    border-radius: 50%;
+}
+/* flex content */
+.center-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+.form_heading{
+    margin-left: 20px;
+    font-family:algerian;
+    font-size:20px;
+    color:white;
+    margin-bottom: 0;
+
 }
 
 
