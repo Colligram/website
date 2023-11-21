@@ -27,6 +27,7 @@ body {
 /* link styling */
 link[type="image/x-icon"]{
   color: orange;
+  background-color:blue;
 }
 
 .second-div-me img:hover {
