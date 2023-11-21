@@ -6,15 +6,14 @@
   margin: 0;
   padding: 0;
 }
-
+svg{
+  background-color:transparent !important;
+}
 html {
   scroll-behavior: smooth;
 }
 
-button {
-  padding: 0;
-  cursor: pointer;
-}
+
 
 html,
 body {
@@ -26,7 +25,7 @@ body {
 }
 /* link styling */
 link[type="image/x-icon"]{
-  color: orange;
+
   background-color:blue;
 }
 
@@ -98,10 +97,11 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 90px;
-  backdrop-filter: blur(10px);
+  height: 70px;
+  /* backdrop-filter: blur(10px); */
   transition: 4s;
 }
+
 
 .logo {
   border-radius: 15px;
@@ -174,7 +174,9 @@ button a {
   transition: 1s;
 }
 
+
 button {
+  
   padding: 10px 20px;
   background-color: #3498db;
   color: #fff;
@@ -223,17 +225,26 @@ button:hover {
   border-bottom-right-radius: 100px;
   border-top-left-radius: 100px;
 }
-
-.description h2 {
-  font-size: 30px;
+h2{
+  color: cyan!important;
+  font-family: algerian !important;
   margin-bottom: 10px;
-  color: black;
-  font-family: algerian, "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
 }
 
+
 .description p {
-  line-height: 1;
+  line-height:1;
+
+}
+
+.description p:hover {
+  cursor: pointer;
+
+  text-shadow: -1px 1px 0 #41ba45,
+          1px 1px 0 #570bf4,
+         1px -1px 0 #ff00ff;
+       
+
 }
 
 .description {
@@ -497,15 +508,16 @@ footer {
 /*CONTACT*/
 .contact {
   margin: 5% 8%;
-  font-size: 25px;
-  height: 50vh;
+  font-size: 20px;
+ 
 }
 
 h4 {
   font-size: 30px;
-  color: plum;
+  color: #8000ff;
   text-decoration: underline;
-  margin-left: 33.3%;
+  text-align:left;
+
 }
 
 
@@ -650,7 +662,7 @@ input[type="text"],
 [type="tel"],
 [type="email"] {
   outline: none;
-  border-radius: 5px;
+  border-radius: 2px;
   min-width: 200px;
 }
 [type="checkbox"]:checked,
@@ -733,11 +745,7 @@ margin: 0 10%;
 
 
 .card-3d-wrap {
-    
-  
-  position: relative;
-  
-
+        position: relative;
   min-height: 400px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -816,5 +824,21 @@ margin: 0 10%;
     margin-bottom: 0;
 
 }
+ .form-style:focus{
+   outline:1px solid green;
+   color:blue;
+   box-shadow:3px 3px 3px 3px green,-3px -3px 3px 3px plum
+    
+   
+ }
+ .form-style{
+border:1px solid green;
+    text-transform: capitalize;
+   background:white ;
+   color:black
+   text-decoration:bold;
+  
+
+ }
 
 
