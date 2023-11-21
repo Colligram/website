@@ -24,7 +24,10 @@ body {
   background-color: #0d1830;
   position: relative;
 }
-
+/* link styling */
+link[type="image/x-icon"]{
+  color: orange;
+}
 
 .second-div-me img:hover {
   filter: blur(5px);
