@@ -164,6 +164,7 @@ button a {
   color: #fff;
 }
 
+
 .hire_me {
   margin-left: 20px;
   text-align: center;
@@ -212,18 +213,18 @@ button:hover {
 
 .second_image {
   flex: 1 1 300px;
-  max-width: 100%;
-  overflow: hidden;
+  width: 100%;
+  
 }
 
 .second_image img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  border-bottom-right-radius: 100px;
-  border-top-left-radius: 100px;
+  border-bottom-right-radius: 150px;
+  border-top-left-radius: 150px;
 }
 h2{
   color: cyan!important;
@@ -243,9 +244,7 @@ h2{
   text-shadow: -1px 1px 0 #41ba45,
           1px 1px 0 #570bf4,
          1px -1px 0 #ff00ff;
-       
-
-}
+       }
 
 .description {
   flex: 1 1 300px;
@@ -513,7 +512,7 @@ footer {
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 40px;
   color: #8000ff;
   text-decoration: underline;
   text-align:left;
@@ -581,58 +580,6 @@ h4 {
 }
 
 
-/* Styles for.checkbox_1:checked ~ul small phones (.checkbox:checked~) */
-@media only screen and (max-width: 767px) {
-  li {
-    margin-top: 25px;
-    margin-left: 15px;
-  }
-
-  .logo {
-    height: 50px;
-    max-width: 70px;
-  }
-
-  nav {
-    backdrop-filter: blur(1px);
-
-  }
-
-
-/* the html checkbox is checked by default:
-  1.on the default checked state it hides the unordered list but when clicked it uchecks the button and the conditions returns false*/
-  ul {
-    width: 170px;
-      min-height: 300px;
-      padding-top: 20px;
-     
-    display: block;
-     padding: 0;
-      font-size: 15px;
-          overflow: hidden;
-      transition: 500ms ease;
-     border: 3px solid blue;
-    background: url("menu.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-
-  
-  }
-
-
-  .checkbox-menu-2:checked~ul {
-    width: 0px;
-    height: 0px;
-    margin-right: 0;
-    margin-top: 40px;
-    overflow: hidden;
-    transition: 1500ms ease;
-     border: none;
-
-  }
- 
-}
 
 
 span{
@@ -832,13 +779,285 @@ margin: 0 10%;
    
  }
  .form-style{
+     border-radius: 10px;
 border:1px solid green;
     text-transform: capitalize;
    background:white ;
-   color:black
+   color:black;
    text-decoration:bold;
   
-
  }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
+
+
+/* Styles for.checkbox_1:checked ~ul small phones (.checkbox:checked~) */
+@media only screen and (max-width: 767px) {
+  li {
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+
+  .logo {
+    height: 50px;
+    max-width: 70px;
+  }
+
+  nav {
+    backdrop-filter: blur(1px);
+
+  }
+
+
+/* the html checkbox is checked by default:
+  1.on the default checked state it hides the unordered list but when clicked it uchecks the button and the conditions returns false*/
+  ul {
+    width: 170px;
+      min-height: 300px;
+      padding-top: 20px;
+     
+    display: block;
+     padding: 0;
+      font-size: 15px;
+          overflow: hidden;
+      transition: 500ms ease;
+     border: 3px solid blue;
+    background: url("menu.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+     border-top-left-radius: 20px;
+    perspective:800px ;
+
+  
+  }
+
+
+  .checkbox-menu-2:checked~ul {
+    width: 0px;
+    height: 0px;
+    margin-right: 0;
+    margin-top: 40px;
+    overflow: hidden;
+    transition: 1500ms ease;
+     border: none;
+
+  }
+
+ /*introduction block*/
+.first_div {
+  line-height: 1;
+  margin-left: 2px!important;
+   margin-top: 8% !important;
+   
+   min-width: 100%;
+}
+
+.image-flex {
+    padding-right: 0;
+   
+  margin: 0 2%;
+  display: block;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 0;
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  -webkit-animation: bounce-in-bck 1.1s both;
+  animation: bounce-in-bck 1.1s both;
+}
+
+
+.second-div-me {
+  margin-right: 10px;
+  margin-top: 10px;
+  
+}
+
+h1{
+font-size: 25px;
+}
+#edit{
+font-size: 20px!important;
+}
+
+.second-div-me img{
+    max-width:200px;
+    padding-left: 0;
+
+}
+
+
+
+.buttonblock { 
+ 
+  display: inline-flex;
+
+  width: fit-content; 
+  margin-left:0!important; 
+}
+.hire_me1{
+   
+ height: 35px !important;
+ font-size: 10px !important;
+  
+ 
+}
+button{padding: 0;
+width:60px;}
+
+.description {
+   max-width: 100%;
+  padding: 0 20px;
+  margin-left: 10px;
+  font-size: 15px;
+
+}
+
+/*skills*/
+.skills {
+  margin: 2% 5%;
+  display: flex;
+
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+
+
+  color: #58a5d5;
+  font-size: 25px;
+  flex-wrap: wrap;
+  border: 2px solid red;
+}
+
+
+.lang {
+  margin-left: 0 auto;
+  color: #c5d214;
+  font-size: 20px;
+  font-family: algerian;
+  text-align: center;
+  text-decoration: bolder;
+  
+}
+
+
+.skills p {
+  line-height: 1;
+}
+
+.skills img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10%;
+}
+
+.skills img:hover {
+  transform: scale(1.1);
+}
+
+.second_image img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 2%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 8px  rgb(9, 214, 95);
+  transition: transform 0.3s ease-in-out;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+}
+
+
+ 
+
+
+
+.center-wrap {
+    
+  float: center;
+  clear: both;
+  width:250px;
+  padding: 1% 5%;
+margin: 0 10%;
+ border: 3px solid turquoise;
+  transform: translate3d(0, 10%, 35px) perspective(100px);
+}
+
+
+
+
+.card-3d-wrap {
+    border: 3px solid turquoise;
+        position: relative;
+        width: 300px;
+  min-height: 400px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  perspective: 8000px;
+ margin-left: 5%;
+ margin-top: 20px;
+
+  
+}
+
+.card-3d-wrapper {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 600ms ease-out;
+  
+  padding: 0;
+}
+
+.card-front,
+.card-back {
+    
+  width: 300px;
+  height: 500px;
+  background-color: #2a2b38;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 16px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+textarea{
+    min-width:100;
+}
+.coffee{
+    padding-top: 0;
+    margin-top: 0;
+    height:80px;
+}
+/*end of  form mobile phones editing
+  */
+
+
+.btn {
+    position:relative;
+    z-index: 900;
+  border-radius: 4px;
+  height: 34px;
+  font-size: 13px;
+  font-weight: 200;
+
+}
+
+}
