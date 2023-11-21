@@ -59,8 +59,8 @@ visibility: hidden;
         <h1 class="me">Hi, am <span>C</span>ollins Otieno<br> <span id="edit"> Front end web developer</span> </h1>
 
         <div class="buttonblock">
-          <button onclick="hire_me()" class="hire_me"><a href="#lets_talk">HIRE ME</a></button>
-          <button><a href="collins otieno_resume.pdf">DOWNLOAD CV</a></button>
+          <button onclick="hire_me()" class="hire_me hire_me1 "><a  class="hire_me1"   href="#lets_talk">HIRE ME</a></button>
+          <button><a href="collins otieno_resume.pdf"  class="hire_me1"    >DOWNLOAD CV</a></button>
         </div>
 
       </div>
@@ -96,14 +96,14 @@ visibility: hidden;
 
       <div class="skills description">
         <h3>skills </h3><br>
-        <P class="lang">LANGUAGES I SPEAK
+        <P class="lang"><u>LANGUAGES I SPEAK</u>
         </p>
 
         <P><span class="before">- Front-End Technologies: </span>
-          HTML5, CSS3, JavaScript (ES6+), Bootstrap</P><br>
+          HTML5, CSS3, JavaScript (ES6+), Bootstrap</P>
         <P><span class="before"> - Back-End Technologies: </span> PHP (Laravel, CodeIgniter)</P><br>
-        <P><span class="before"> - Database Systems:</span>MySQL</P><br>
-        <P><span class="before"> - Version Control Systems:</span> Git, GitHub</P><br>
+        <P><span class="before"> - Database Systems:</span>MySQL</P>
+        <P><span class="before"> - Version Control Systems:</span> Git, GitHub</P>
         <P>
           - Responsive Web Design<br>
           - Problem-Solving and Debugging<br>
@@ -116,6 +116,7 @@ visibility: hidden;
         <img src="https://colligram--collinsochieng2.repl.co/images/elephant_load.png" alt="php,javascript,html,css,bootstrap,sql">
 
       </div>
+    
       <!--marquee-->
     </div>
 
@@ -152,18 +153,18 @@ visibility: hidden;
                   <input type="number" name="budget" class="form-style" placeholder=" Projects budget (optional)" id=""
                     ><br><br>
                   <input type="email" name="recruiter_logemail" class="form-style" placeholder="Your Email@example.domain"
-                    id="recruiter_logemail" required>
+                    id="recruiter_logemail" >
 
                   </div>
                   <div class="separation_2">
 
-                  <input required type="text" name="recruiter_mail_subject"   class="form-style"  value=""
-                    placeholder="recruitment info" /><br><br>
+                  <input type="text" name="recruiter_mail_subject"   class="form-style"  value=""
+                    placeholder="SUBJECT" /><br><br>
 
                     
-                  <textarea name="recruiter_message" id="recruiter_textarea" rows="8" cols="40"
-                    placeholder="Hi there! Feel free to leave me a message here. I'll get back to you soon. If it's urgent, please consider calling directly."
-                    required></textarea><br><br>
+                  <textarea name="recruiter_message" id="recruiter_textarea" rows="8" "
+                    placeholder="Hi there! Feel free to leave me a message here. I'll get back to you soon. If it's urgent, please consider calling directly. Thank you."
+                   ></textarea><br><br>
                   </div>
                   <button type="submit" class="btn mt-4">Send message</button>
                 
@@ -181,7 +182,7 @@ visibility: hidden;
                   <input type="text" name="friend_logname" class="form-style" placeholder="Tell me your user_name"
                     id="friend_logname"><br><br>
 
-                  <textarea name="friend_message" id="friend_textarea" rows="8" cols="40"
+                  <textarea name="friend_message" id="friend_textarea" rows="8" cols="30"
                     placeholder="Type the message here, I guess you wanna buy me a coffee"></textarea><br><br><br>
                   
                    </div>
@@ -195,7 +196,7 @@ visibility: hidden;
                   </div>
                   
                  <div>
-                  <button type="submit" class="btn mt-4">Send message</button>
+                  <button type="submit" class="btn ">Send message</button>
               </div>
                 </div>
               
@@ -217,7 +218,7 @@ visibility: hidden;
   </footer>
   <script>
     function hire_me() {
-      alert("U+1F600 am glad now we can talk business");
+      alert("am glad now we can talk business");
     }
 
     function coffee() {
