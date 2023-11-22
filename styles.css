@@ -102,7 +102,9 @@ nav {
   transition: 4s;
 }
 
-
+input[type=email]{
+  text-transform:lowercase!important;
+}
 .logo {
   border-radius: 15px;
 
