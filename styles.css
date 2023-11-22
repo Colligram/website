@@ -102,7 +102,7 @@ nav {
   transition: 4s;
 }
 
-input[type=email]{
+input[type="email"]{
   text-transform:lowercase!important;
 }
 .logo {
