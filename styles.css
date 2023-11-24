@@ -619,6 +619,9 @@ input[type="text"],
   display: none;
 
 }
+
+
+
 .checkbox:checked+label:before {
   transform: translateX(44px) rotate(-270deg);
 }
@@ -651,8 +654,10 @@ input[type="text"],
   background-color: greenyellow;
 }
 
+
 .checkbox:checked+label::before,
 .checkbox:not(:checked)+label::before {
+
   position: absolute;
 
   width: 36px;
