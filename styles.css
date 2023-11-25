@@ -1117,3 +1117,16 @@ background-size: 33.94px 33.94px;
     transform: translateX(calc(-100% - var(--gap)));
   }
 }
+
+.flex {
+  color: #6CF841;
+  display: flex;
+}
+
+svg {
+  margin-right: 0.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
