@@ -1137,7 +1137,7 @@ svg {
 ._social-links {
   position: fixed;
   right: 0;
-  top: 60%;
+  top: 70%;
   transform: translateY(-50%);
   padding: 1em 0.5em 1em 1em;
   background: #333;
@@ -1167,6 +1167,6 @@ svg {
   color: limegreen;
 }
 ._social-link a:hover {
-  color: white;
+  color: blue;
   font-size: 1.75rem;
 }
