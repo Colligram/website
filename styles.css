@@ -25,15 +25,12 @@ body {
 }
 /* link styling */
 link[type="image/x-icon"]{
-
   background-color:blue;
 }
-
 .second-div-me img:hover {
   filter: blur(5px);
   transition: 10s ease;
 }
-
 main {
   width: 100vw;
   margin-top: 100px;
