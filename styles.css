@@ -693,20 +693,20 @@ margin: 0 10%;
   transform: translate3d(0, 10%, 35px) perspective(100px);
 }
 
-
-
-
 .card-3d-wrap {
-        position: relative;
+  position: relative;
   min-height: 400px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  perspective: 8000px;
- margin-left: 5%;
- margin-top: 20px;
-
-  
+  perspective: 800px;
+    margin-top: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
 
 .card-3d-wrapper {
   width: 900px;
@@ -793,12 +793,6 @@ border:1px solid green;
   
  }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
 
 
@@ -1058,15 +1052,36 @@ border:1px solid green;
     
   }  
 
-  
-
-/*end of  form mobile phones editing
+  /*end of  form mobile phones editing
   */
+}
+
+.flex {
+  color: #6CF841;
+  display: flex;
+}
+
+svg {
+  margin-right: 0.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.form-center-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid red;
+}
+
+form {
+  border: 3px solid ;
 }
 
 .CONTAINER {
   --space: 2rem;
-
   display: grid;
   align-content: center;
   overflow: hidden;
@@ -1087,8 +1102,8 @@ border:1px solid green;
   user-select: none;
   gap: var(--gap);
   padding: 0.5rem 0;
-background-image: linear-gradient(45deg, #070707 25%, #1c1c1c 25%, #1c1c1c 50%, #070707 50%, #070707 75%, #1c1c1c 75%, #1c1c1c 100%);
-background-size: 33.94px 33.94px;
+  background-image: linear-gradient(45deg, #070707 25%, #1c1c1c 25%, #1c1c1c 50%, #070707 50%, #070707 75%, #1c1c1c 75%, #1c1c1c 100%);
+  background-size: 33.94px 33.94px;
 }
 
 .marquee__group {
@@ -1116,24 +1131,13 @@ background-size: 33.94px 33.94px;
   }
 }
 
-.flex {
-  color: #6CF841;
-  display: flex;
-}
 
-svg {
-  margin-right: 0.5rem;
-}
-
-.items-center {
-  align-items: center;
-}
-
+/*  links sidebar CSS  */
 ._social-links {
   position: fixed;
   right: 0;
   top: 70%;
-  transform: translateY(-50%);
+  transform: translatey(-50%);
   padding: 1em 0.5em 1em 1em;
   background: #333;
   border-radius: 0.5em 0 0 0.5em;
@@ -1153,15 +1157,125 @@ svg {
   gap: 1em;
   padding: 0.5em;
 }
+
 ._social-link a {
   color: limegreen;
   font-size: 1.5rem;
   transition: all 200ms ease;
 }
+
 ._social-link a:visited {
   color: limegreen;
 }
+
 ._social-link a:hover {
-  color: blue;
+  color: white;
   font-size: 1.75rem;
+}
+
+/* //////////////////////////// */
+
+.container {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  width: 500px;
+  min-height: 250px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 6px white;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  z-index: 10;
+  color: whitesmoke;
+}
+
+.title_1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle_1 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn1 {
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  color: whitesmoke;
+  background-color: #fa709a;
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.btn {
+   border: none;
+  text-align: center;
+  font-size: 1rem;
+  color: whitesmoke;
+  background-color: #ff8000;
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(180deg,
+      rgba(47, 184, 255, 0.42) 31.77%,
+      #ff00ff 100%);
+  mix-blend-mode: color-dodge;
+  -webkit-animation: move 18s infinite alternate;
+  animation: move 18s infinite alternate;
+  transition: 800ms cubic-bezier(0.07, 0.8, 0.16, 1);
+}
+
+.blob:hover {
+  width: 300px;
+  height: 420px;
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+  box-shadow:
+    inset 0 0 0 5px rgba(255, 255, 255, 0.6),
+    inset 100px 100px 0 0px #fa709a,
+    inset 200px 200px 0 0px #784ba8,
+    inset 300px 300px 0 0px #ff8000;
+}
+
+@-webkit-keyframes move {
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
 }
