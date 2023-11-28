@@ -513,12 +513,11 @@ footer {
 
 h4 {
   font-size: 40px;
-  color: #8000ff;
-  text-decoration: underline;
-  text-align:left;
+  color: #ff8000;
+  text-align: center;
+  text-transform: capitalize;
 
 }
-
 
 
 .btn {
@@ -712,8 +711,7 @@ margin: 0 10%;
   width: 900px;
   height: 400px;
   position: absolute;
-  top: 0;
-  left: 0;
+  
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: all 600ms ease-out;
