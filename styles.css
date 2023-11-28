@@ -1277,3 +1277,5 @@ form {
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
   }
 }
+form
+{border-bottom:none;}
