@@ -969,7 +969,7 @@ border:1px solid green;
     min-height: 400px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    perspective: 800px;
+    perspective: 500px;
       margin-top: 20px;
       display: flex;
     align-items: center;
