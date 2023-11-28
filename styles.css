@@ -204,28 +204,24 @@ button:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  align-content: center;
+
   background: linear-gradient(to top right, #1644c0, #161314);
   margin-top: 100px;
   padding: 50px 10px 50px 10px;
 }
 
-.second_image {
-  flex: 1 1 300px;
-  width: 100%;
-  
-}
+
 
 .second_image img {
-  max-width: 100%;
-  height: auto;
+  height:auto;
+    min-width:100%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 4px 8px 15px #ff8040;
   transition: transform 0.3s ease-in-out;
   border-bottom-right-radius: 150px;
   border-top-left-radius: 150px;
-}
+} 
+
 h2{
   color: cyan!important;
   font-family: algerian !important;
@@ -247,9 +243,7 @@ h2{
        }
 
 .description {
-  flex: 1 1 300px;
-  max-width: 100%;
-  padding: 0 20px;
+     padding: 0 20px;
   margin-left: 26px;
   font-size: 25px;
   -webkit-animation: roll-in-left 0.6s ease-out both;
