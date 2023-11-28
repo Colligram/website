@@ -697,7 +697,7 @@ margin: 0 10%;
   min-height: 400px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  perspective: 800px;
+  perspective: 80000px;
     margin-top: 20px;
     display: flex;
   align-items: center;
@@ -709,7 +709,7 @@ margin: 0 10%;
 
 .card-3d-wrapper {
   width: 900px;
-  height: 400px;
+  height: 420px;
   position: absolute;
   
   -webkit-transform-style: preserve-3d;
@@ -765,7 +765,20 @@ margin: 0 10%;
     flex-wrap: wrap;
     justify-content:space-between;
     align-items:center;
+
+  border-radius:5px;
+  box-shadow:3px 3px 25px 6px turquoise,-3px -5px 25px 6px turquoise;
+  
+  transform: translate3d(0, 10%, 35px) perspective(800px);
 }
+
+
+
+
+
+
+
+
 .form_heading{
     margin-left: 20px;
     font-family:algerian;
