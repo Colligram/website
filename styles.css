@@ -917,14 +917,13 @@ border:1px solid green;
   .skills {
     margin: 2% 5%;
     display: flex;
-
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
+    justify-content:center;
     text-align: left;
     color: #58a5d5;
     font-size: 25px;
-    flex-wrap: wrap;
-    border: 2px solid red;
+       border: 2px solid red;
   }
 
 
