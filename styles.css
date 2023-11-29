@@ -1286,3 +1286,108 @@ form {
 }
 form
 {border-bottom:none;}
+
+/* skills 22222 */
+
+.wrap {
+  margin-top: 120px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  background-size: 80px 80px;
+}
+.cube {
+  margin: auto;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+.cube img {
+  height: 200px;
+  width: 200px;
+}
+.cube div {
+  position: absolute;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100%;
+  opacity: 0.8;
+  width: 100%;
+  color: #fff;
+  font: normal 50pt Arial;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in;
+}
+.front {
+  transform: translateZ(100px);
+  background: linear-gradient(to right, #ff7816, #ff4b00);
+}
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+  background: linear-gradient(to right, #ff7816, #ff4b00);
+}
+.right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+  background-color: #ffdf00;
+}
+.left {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+  background-color: #ffdf00;
+}
+.top {
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top center;
+  background-color: #2196f3;
+}
+.bottom {
+  transform: rotateX(270deg) translateY(100px);
+  transform-origin: bottom center;
+  background-color: #2196f3;
+}
+
+.cube {
+  animation: rotate 7s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+.cube:hover .core{
+  color: #000000;
+  text-shadow:3px 3px 3px magenta;
+}
+.core {
+  color: #fff;
+  font: normal 70pt Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cube:hover .front {
+  transform: translateZ(200px);
+}
+.cube:hover .back {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+.cube:hover .right {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+.cube:hover .left {
+  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+.cube:hover .top {
+  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+.cube:hover .bottom {
+  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
