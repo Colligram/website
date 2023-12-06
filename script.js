@@ -1,5 +1,5 @@
 function hire_me() {
-  alert("Your interest in hiring me is truly appreciated!i will reach out soon to discuss how I can contribute to your team's success.Hit OK to share your recruitment information and start our journey together.");
+  alert("Your interest in hiring me is truly appreciated!, I will reach you back soon to discuss how I can contribute to your team's success. Hit OK to share your recruitment information and start our journey together.");
 }
 
 // NEW CODES 
