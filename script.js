@@ -67,3 +67,11 @@ for (let i = 0; i < 2; i++) {
     });
   }
 }
+function hire_me() {
+  alert("Your interest in hiring me is truly appreciated!i will reach out soon to discuss how I can contribute to your team's success.Hit OK to share your recruitment information and start our journey together.");
+}
+function coffee() {
+  alert("Your support means the world! By buying me a coffee, you're helping fuel late-night coding sessions. Click OK to treat me to a virtual coffee and support my work!");
+;}
+
+
