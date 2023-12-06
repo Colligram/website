@@ -1,3 +1,30 @@
+function hire_me() {
+  alert("Your interest in hiring me is truly appreciated!i will reach out soon to discuss how I can contribute to your team's success.Hit OK to share your recruitment information and start our journey together.");
+}
+
+// NEW CODES 
+const BOUNDS = 50;
+
+for (let i = 0; i < 2; i++) {
+  if (i === 0) {
+    document.addEventListener("pointermove", ({ x, y }) => {
+      const newX = gsap.utils.mapRange(0, window.innerWidth, -BOUNDS, BOUNDS, x);
+      const newY = gsap.utils.mapRange(0, window.innerHeight, BOUNDS, -BOUNDS, y);
+      gsap.set(document.documentElement, {
+        "--rotate-x": newY,
+        "--rotate-y": newX
+      });
+    });
+  } else if (i === 1) {
+    let isChecked; // Declare the variable without initializing
+    document.addEventListener("pointerdown", (e) => {
+      isChecked = !isChecked;
+      document.documentElement.style.setProperty("--dark", isChecked ? 1 : 0);
+    });
+  }
+}
+
+
 const form1 = document.querySelector("form");
 // Getting the details from forms
 const FullName = document.getElementById("recruiter_logname");
@@ -45,31 +72,6 @@ form1.addEventListener("submit", (e) => {
   e.preventDefault();
   sendEmail();
 });
-
-// NEW CODES 
-const BOUNDS = 50;
-
-for (let i = 0; i < 2; i++) {
-  if (i === 0) {
-    document.addEventListener("pointermove", ({ x, y }) => {
-      const newX = gsap.utils.mapRange(0, window.innerWidth, -BOUNDS, BOUNDS, x);
-      const newY = gsap.utils.mapRange(0, window.innerHeight, BOUNDS, -BOUNDS, y);
-      gsap.set(document.documentElement, {
-        "--rotate-x": newY,
-        "--rotate-y": newX
-      });
-    });
-  } else if (i === 1) {
-    let isChecked; // Declare the variable without initializing
-    document.addEventListener("pointerdown", (e) => {
-      isChecked = !isChecked;
-      document.documentElement.style.setProperty("--dark", isChecked ? 1 : 0);
-    });
-  }
-}
-function hire_me() {
-  alert("Your interest in hiring me is truly appreciated!i will reach out soon to discuss how I can contribute to your team's success.Hit OK to share your recruitment information and start our journey together.");
-}
 function coffee() {
   alert("Your support means the world! By buying me a coffee, you're helping fuel late-night coding sessions. Click OK to treat me to a virtual coffee and support my work!");
 ;}
