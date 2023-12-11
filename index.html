@@ -494,7 +494,7 @@
 
 
    <!-- debugged form -->
-      <form action="https://formspree.io/f/xrgwnrqy" method="POST" id="lets_talk" style="border-bottom:none;"  enctype="multipart/form-data" >
+      <form action="https://formspree.io/f/xrgwnrqy" method="POST" id="lets_talk" style="border-bottom:none;"  >
         <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
         <label for="reg-log"></label>
 
@@ -506,7 +506,7 @@
               <div class="center-wrap">
                 <div class="separation_1">
                   <input type="text" name="recruiter_logname" class="form-style" placeholder="Your Full Name please"
-                    id="recruiter_logname" required><br><br>
+                    id="recruiter_logname"><br><br>
                   <input type="tel" name="telephone" class="form-style" placeholder="Phone number"
                     id="recruiter_telephone" max="14"><br><br>
                   <input type="number" name="budget" class="form-style" placeholder=" Projects budget (optional)"
@@ -520,7 +520,8 @@
                   <textarea name="recruiter_message" id="recruiter_textarea" rows="8"
                     placeholder="Hi there! Feel free to leave me a message here. I'll get back to you soon. If it's urgent, please consider calling directly. Thank you."></textarea><br><br>
                 </div>
-                <button type="submit" class="btn mt-4">Send message</button>
+                <input type="submit" class="btn mt-4" value="Send message">
+<!--                 <button type="submit" class="btn mt-4">Send message</button> -->
               </div>
             </div>
 
@@ -546,7 +547,8 @@
                 </div>
                 <!-- buy me a coffee section-->
                 <div>
-                  <button type="submit" class="btn">Send message</button>
+<!--                   <button type="submit" class="btn">Send message</button> -->
+                  <input type="submit" class="btn" value="Send message">
                 </div>
               </div>
             </div>
