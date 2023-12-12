@@ -1,4 +1,5 @@
 function hire_me() {
+  document.getElementsByTagName("aside")[0].style.display:none;
   alert("Your interest in hiring me is truly appreciated!, I will reach you back soon to discuss how I can contribute to your team's success. Hit OK to share your recruitment information and start our journey together.");
 }
 function coffee1() {
@@ -6,7 +7,7 @@ function coffee1() {
 
 }
 document.addEventListener("DOMContentLoaded", function () {
-  const BOUNDS = 2;
+  const BOUNDS = 20;
 
   for (let i = 0; i < 2; i++) {
     if (i === 0) {
