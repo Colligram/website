@@ -5,27 +5,27 @@ function coffee1() {
   alert("Hooray! Your detail is in. Now, before you go, Don't forget to grab a coffee for me—it's my secret coding fuel!");
 
 }
-document.addEventListener("DOMContentLoaded", function () {
-  const BOUNDS = 50;
+// document.addEventListener("DOMContentLoaded", function () {
+//   const BOUNDS = 50;
 
-  for (let i = 0; i < 2; i++) {
-    if (i === 0) {
-      document.addEventListener("pointermove", ({ x, y }) => {
-        const newX = gsap.utils.mapRange(0, window.innerWidth, -BOUNDS, BOUNDS, x);
-        const newY = gsap.utils.mapRange(0, window.innerHeight, BOUNDS, -BOUNDS, y);
-        gsap.set(document.documentElement, {
-          "--rotate-x": newY,
-          "--rotate-y": newX
-        });
-      });
-    } else if (i === 1) {
-      let isChecked; // Declare the variable without initializing
-      document.addEventListener("pointerdown", (e) => {
-        isChecked = !isChecked;
-        document.documentElement.style.setProperty("--dark", isChecked ? 1 : 0);
-      });
-    }
-  }
+//   for (let i = 0; i < 2; i++) {
+//     if (i === 0) {
+//       document.addEventListener("pointermove", ({ x, y }) => {
+//         const newX = gsap.utils.mapRange(0, window.innerWidth, -BOUNDS, BOUNDS, x);
+//         const newY = gsap.utils.mapRange(0, window.innerHeight, BOUNDS, -BOUNDS, y);
+//         gsap.set(document.documentElement, {
+//           "--rotate-x": newY,
+//           "--rotate-y": newX
+//         });
+//       });
+//     } else if (i === 1) {
+//       let isChecked; // Declare the variable without initializing
+//       document.addEventListener("pointerdown", (e) => {
+//         isChecked = !isChecked;
+//         document.documentElement.style.setProperty("--dark", isChecked ? 1 : 0);
+//       });
+//     }
+//   }
 
   // const form1 = document.querySelector("form");
 
