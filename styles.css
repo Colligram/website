@@ -89,6 +89,9 @@ body {
   overflow-x: hidden !important;
 
 }
+main{
+    max-width: 100%; /* Limits the width to the width of the viewport */
+}
 
 /* link styling */
 link[type="image/x-icon"] {
