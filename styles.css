@@ -1741,26 +1741,37 @@ form {
 .wings__strobe--right {
   transform: translate3d(-50%, 0, calc(var(--base-size) * -1vmin));
 }
-.cloud {
-height: 10vmin;
-  width: 15vmin; 
-  
+
+
+
+cloud {
+  height: 10vmin;
+  width: 15vmin;
   transform-style: preserve-3d;
   transition: background 0.25s;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: -15vmin; /* Adjusted left value to start outside the left edge */
   transform: translate(-50%, -50%);
 }
+
 .cloud__shift {
   height: 100%;
   width: 100%;
   -webkit-animation: pan calc(var(--speed, 5) * 1s) calc(var(--delay, 5) * -1s)
     infinite ease-in-out both;
   animation: pan calc(var(--speed, 5) * 1s) calc(var(--delay, 5) * -1s) infinite
-    ease-in-out both; transform-style: preserve-3d;
+    ease-in-out both;
+  transform-style: preserve-3d;
   transition: background 0.25s;
 }
+
+
+
+
+
+
+
 .cloud__body {
   height: 100%;
   width: 100%;
