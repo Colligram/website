@@ -7,7 +7,7 @@ function coffee1() {
 
 }
 document.addEventListener("DOMContentLoaded", function () {
-  const BOUNDS = 20;
+  const BOUNDS = 50;
 
   for (let i = 0; i < 2; i++) {
     if (i === 0) {
