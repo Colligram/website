@@ -79,7 +79,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  
   background-color: #0d1830;
   position: relative;
 }
@@ -1406,7 +1406,7 @@ form {
   }
 
   textarea {
-    min-width: 100;
+    min-width: 100px;
   }
 
   .coffee {
@@ -1454,9 +1454,7 @@ form {
 
   }
 
-  main {
-    width: 100%vh;
-  }
+ 
 
   /*end of  form mobile phones editing
   */
