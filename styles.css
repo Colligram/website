@@ -84,6 +84,11 @@ body {
   position: relative;
 }
 
+body {
+  overflow-x: hidden !important;
+  min-width: 100% !important; /* or a specific value in pixels, em, etc. */
+}
+
 /* link styling */
 link[type="image/x-icon"] {
 
@@ -1737,8 +1742,10 @@ form {
   transform: translate3d(-50%, 0, calc(var(--base-size) * -1vmin));
 }
 .cloud {
-  height: 10vmin;
-  width: 15vmin;
+/*   height: 10vmin;
+  width: 15vmin; */
+  height: auto;
+  width: auto;
   transform-style: preserve-3d;
   transition: background 0.25s;
   position: absolute;
@@ -2261,8 +2268,4 @@ form {
   100% {
     transform: translate(1000%, 0);
   }
-}
-body {
-  overflow-x: hidden !impportant;
-  min-width: 100% !impportant; /* or a specific value in pixels, em, etc. */
 }
