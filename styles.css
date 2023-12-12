@@ -86,7 +86,7 @@ body {
 
 body {
   overflow-x: hidden !important;
-  min-width: 100% !important; /* or a specific value in pixels, em, etc. */
+
 }
 
 /* link styling */
