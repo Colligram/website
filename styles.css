@@ -1742,10 +1742,9 @@ form {
   transform: translate3d(-50%, 0, calc(var(--base-size) * -1vmin));
 }
 .cloud {
-/*   height: 10vmin;
-  width: 15vmin; */
-  height: auto;
-  width: auto;
+height: 10vmin;
+  width: 15vmin; 
+  
   transform-style: preserve-3d;
   transition: background 0.25s;
   position: absolute;
