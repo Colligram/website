@@ -101,12 +101,6 @@ link[type="image/x-icon"] {
   transition: 10s ease;
 }
 
-main {
-  width: 100%vw;
-  margin-top: 100px;
-  z-index: -20;
-  color: whitesmoke;
-}
 
 ul {
 
@@ -533,8 +527,6 @@ footer {
 }
 
 
-
-
 .first_div,
 .second-div-me {
   width: calc(50% - 20px);
@@ -617,7 +609,13 @@ h4 {
 /*media screens*/
 /* Styles for larger screens */
 @media screen and (min-width: 768px) {
-
+main {
+  width: 100vw;
+  margin-top: 100px;
+  z-index: -20;
+  color: whitesmoke;
+}
+  
   .first_div,
   .second-div-me {
     width: calc(50% - 20px);
