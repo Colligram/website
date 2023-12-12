@@ -1,6 +1,10 @@
 function hire_me() {
   alert("Your interest in hiring me is truly appreciated!, I will reach you back soon to discuss how I can contribute to your team's success. Hit OK to share your recruitment information and start our journey together.");
 }
+function coffee1() {
+  alert("Hooray! Your detail is in. Now, before you go, Don't forget to grab a coffee for me—it's my secret coding fuel!");
+
+}
 document.addEventListener("DOMContentLoaded", function () {
   const BOUNDS = 50;
 
