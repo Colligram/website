@@ -9,7 +9,7 @@
 
 
 :root {
-  --dark: 0;
+  --dark: 5;
   --base-size: 20;
   --plane-height: calc(var(--base-size) * 1vmin);
   --plane-width: calc(var(--plane-height) * 1.6);
