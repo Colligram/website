@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+ 
 }
 
 :root {
@@ -77,20 +78,13 @@ html {
 
 html,
 body {
+
+  border:3px solid green;
   margin: 0;
   padding: 0;
-  
-  background-color: #0d1830;
   position: relative;
-}
-
-body {
-  height: 100vh;
-  overflow-x: hidden !important;
-
-}
-main{
-    max-width: 100%; /* Limits the width to the width of the viewport */
+  background-color: #0d1830;
+ 
 }
 
 /* link styling */
@@ -104,9 +98,15 @@ link[type="image/x-icon"] {
   transition: 10s ease;
 }
 
+main {
+  margin-top: 100px;
+  z-index: -20;
+  color: whitesmoke;
+  border:3px solid yellow;
+}
 
 ul {
-
+  
   display: flex;
   flex-direction: row;
 }
@@ -143,26 +143,25 @@ li a.navs_pecific:hover {
 
   background-color: plum;
   font-style: normal;
-  position: relative;
+  /* position: relative; */
   bottom: 2px;
   animation: none;
 }
 
 nav {
-  padding-top: 10px;
+  border: 3px solid red;
+  padding-top: 20px;
+  padding-right: 10px;
   display: flex;
   justify-content: flex-end;
-  flex-flow: row wrap;
+  flex-direction: row ;
   -webkit-align-content: space-between;
   align-content: space-between;
-  -webkit-flex-basis: 100px;
-  flex-basis: 100px;
-  z-index: 700;
-
+    z-index: 700;
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 60px;
+  width: 99%;
+  height: 80px;
   backdrop-filter: blur(10px);
   transition: 4s;
 }
@@ -322,29 +321,28 @@ h2 {
   color: #58a5d5;
 
 }
+.ul{
+  margin-right: 8px;
 
-.lang {
-  margin-left: 30px;
-  color: #c5d214;
+}
+.lang{
+
+  color: #89a20b;
   font-size: 35px;
   font-family: cursive;
+  text-decoration: overline;
+ 
 }
 
-h3 {
-  margin-left: 10px;
-  font-size: 40px;
-  text-transform: uppercase;
-  word-spacing: 2px;
-  display: none;
-}
+
 
 .skills p {
   line-height: 1;
 }
 
 .skills img {
-  max-width: 100%;
-  border-radius: 10px;
+
+  border-radius: 20px;
   margin-top: 10%;
 }
 
@@ -530,6 +528,8 @@ footer {
 }
 
 
+
+
 .first_div,
 .second-div-me {
   width: calc(50% - 20px);
@@ -612,13 +612,7 @@ h4 {
 /*media screens*/
 /* Styles for larger screens */
 @media screen and (min-width: 768px) {
-main {
-  width: 100vw;
-  margin-top: 100px;
-  z-index: -20;
-  color: whitesmoke;
-}
-  
+
   .first_div,
   .second-div-me {
     width: calc(50% - 20px);
@@ -915,8 +909,8 @@ form {
 ._social-links {
   position: fixed;
   right: 0;
-  top: 70%;
-  transform: translatey(-50%);
+  top: 60%;
+  margin: 0;
   padding: 1em 0.5em 1em 1em;
   background: #333;
   border-radius: 0.5em 0 0 0.5em;
@@ -1197,7 +1191,7 @@ form {
   }
 
   nav {
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(5px);
   }
 
   /* the html checkbox is checked by default:
@@ -1208,6 +1202,7 @@ form {
     padding-top: 20px;
     display: block;
     padding: 0;
+    
     font-size: 15px;
     overflow: hidden;
     transition: 500ms ease;
@@ -1409,7 +1404,7 @@ form {
   }
 
   textarea {
-    min-width: 100px;
+    min-width: 100;
   }
 
   .coffee {
@@ -1430,34 +1425,14 @@ form {
 
 
   ._social-links {
-    position: fixed;
-    right: 0;
-    top: 70%;
-    transform: translatey(-50%);
-
-    background: #333;
-    border-radius: 0.5em 0 0 0.5em;
-    box-shadow: -4px 0px 0px limegreen;
-    transition: all 300ms ease;
+   display:none;
   }
 
-  ._social-link {
-    margin: 0;
-  }
 
-  ._links-list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1mm;
-    padding: 5px 2px;
-    margin: 0;
 
-  }
-
- 
+  /* main {
+    width: 100%vh;
+  } */
 
   /*end of  form mobile phones editing
   */
@@ -1466,6 +1441,7 @@ form {
 
 
 .cuboid {
+  
   width: 100%;
   height: 100%;
   position: relative; transform-style: preserve-3d;
@@ -1741,38 +1717,27 @@ form {
 .wings__strobe--right {
   transform: translate3d(-50%, 0, calc(var(--base-size) * -1vmin));
 }
-
-
-
-cloud {
+.cloud {
   height: 10vmin;
   width: 15vmin;
   transform-style: preserve-3d;
   transition: background 0.25s;
   position: absolute;
   top: 50%;
-  left: -15vmin; /* Adjusted left value to start outside the left edge */
+  left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .cloud__shift {
   height: 100%;
   width: 100%;
   -webkit-animation: pan calc(var(--speed, 5) * 1s) calc(var(--delay, 5) * -1s)
     infinite ease-in-out both;
   animation: pan calc(var(--speed, 5) * 1s) calc(var(--delay, 5) * -1s) infinite
-    ease-in-out both;
-  transform-style: preserve-3d;
+    ease-in-out both; transform-style: preserve-3d;
   transition: background 0.25s;
 }
-
-
-
-
-
-
-
 .cloud__body {
+  
   height: 100%;
   width: 100%;
   -webkit-animation: scale calc(var(--speed, 5) * 1s)
