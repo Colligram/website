@@ -231,8 +231,8 @@ button a {
   margin-left: 20px;
   text-align: center;
   animation-name: movement;
-  animation-delay: 2s;
-  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   transition: 1s;
 }
@@ -325,15 +325,17 @@ h2 {
   margin-right: 8px;
 
 }
-.lang{
 
-  color: #89a20b;
-  font-size: 35px;
-  font-family: cursive;
-  text-decoration: overline;
- 
-}
-
+  h3 {
+    color: #c5d214;
+ text-decoration: overline;
+    font-family: cursive;
+    margin-left: 2px;
+   font-size: 35px;
+    text-transform: uppercase;
+    word-spacing: normal;
+   
+  }
 
 
 .skills p {
