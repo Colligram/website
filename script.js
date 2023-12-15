@@ -13,32 +13,32 @@ function coffee1() {
 
 
 
-// document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
  
-//   var form = document.getElementById("lets_talk");
+  var form = document.getElementById("lets_talk");
 
 
-//   form.addEventListener("submit", function(event) {
+  form.addEventListener("submit", function(event) {
    
-//     if (!isFormValid()) {
+    if (!isFormValid()) {
      
-//       event.preventDefault();
-//     }
-//   });
+      event.preventDefault();
+    }
+  });
 
-//   function isFormValid() {
+  function isFormValid() {
   
   
-//     var nameInput = document.getElementById("recruiter_logname");
-//     var emailInput = document.getElementById("recruiter_logemail");
+    var nameInput = document.getElementById("recruiter_logname");
+    var emailInput = document.getElementById("recruiter_logemail");
 
-//     if (nameInput.value.trim() === "" || emailInput.value.trim() === "") {
-//       alert("Please fill in all required fields.");
-//       return false;
-//     }
-//     return true;
-//   }
-// });
+    if (nameInput.value.trim() === "" || emailInput.value.trim() === "") {
+      alert("Please fill in all required fields.");
+      return false;
+    }
+    return true;
+  }
+});
 
 
 // // document.addEventListener("DOMContentLoaded", function () {
@@ -62,28 +62,6 @@ function coffee1() {
 // //       });
 // //     }
 // //   }
-function preventEmpty() {
-  var form = document.getElementById("lets_talk");
-  
-  function isFormValid() {
-    var nameInput = document.getElementById("recruiter_logname");
-    var emailInput = document.getElementById("recruiter_logemail");
-
-    if (nameInput.value.trim() === "" || emailInput.value.trim() === "") {
-      alert("Please fill in all required fields.");
-      return false;
-    }
-    return true;
-  }
-
-  if (!isFormValid()) {
-    return false; // Prevent the form from submitting
-  }
-
-  // If the form is valid, it will proceed with the submission
-  return true;
-}
-
 //   // const form1 = document.querySelector("form");
 
 //   // // Getting the details from forms
