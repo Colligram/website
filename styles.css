@@ -79,7 +79,7 @@ html {
 html,
 body {
 
-  border:3px solid green;
+  
   margin: 0;
   padding: 0;
   position: relative;
@@ -102,7 +102,7 @@ main {
   margin-top: 100px;
   z-index: -20;
   color: whitesmoke;
-  border:3px solid yellow;
+
 }
 
 ul {
@@ -149,7 +149,7 @@ li a.navs_pecific:hover {
 }
 
 nav {
-  border: 3px solid red;
+ 
   padding-top: 20px;
   padding-right: 10px;
   display: flex;
@@ -590,7 +590,7 @@ h4 {
   -ms-flex-pack: center;
   text-align: center;
   border: none;
-  background-color: #ffeba7;
+  background-color: #1bcd18;
   color: #102770;
   box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
 }
@@ -603,16 +603,16 @@ h4 {
 }
 
 .btn:hover {
-  background-color: #102770;
+  background-color: darkgreen;
   color: #ffeba7;
   box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
 }
 
-
-/*media screens*/
 /* Styles for larger screens */
 @media screen and (min-width: 768px) {
-
+  #friend_textarea,#recruiter_textarea{
+    height:100px !important;
+  }
   .first_div,
   .second-div-me {
     width: calc(50% - 20px);
@@ -653,7 +653,7 @@ input[type="text"],
 [type="email"] {
   outline: none;
   border-radius: 2px;
-  min-width: 200px;
+ 
 }
 
 [type="checkbox"]:checked,
@@ -727,7 +727,7 @@ input[type="text"],
 
 
 .card-3d-wrap {
-  position: relative;
+ 
   min-height: 400px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -802,26 +802,22 @@ input[type="text"],
   transform: translate3d(0, 10%, 35px) perspective(800px);
 }
 
-.form_heading {
-  margin-left: 20px;
-  font-family: algerian;
-  font-size: 20px;
-  color: white;
-  margin-bottom: 0;
-
-}
 
 .form-style:focus {
+  border-top-right-radius: 10px;
+   border-bottom-right-radius: 50px;
   outline: 1px solid green;
-  color: blue;
+  color: #0ee00b;
+   background: #3b3b3b;
   box-shadow: 3px 3px 3px 3px green, -3px -3px 3px 3px plum
 }
 
 .form-style {
-  border-radius: 10px;
-  border: 1px solid green;
+  border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+  border: 1px solid #050505;
   text-transform: capitalize;
-  background: white;
+ 
   color: black;
   text-decoration: bold;
 }
@@ -846,7 +842,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid red;
+
 }
 
 form {
@@ -1054,7 +1050,14 @@ form {
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
   }
 }
+.form_heading {
+  margin-left: 20px;
+  font-family: algerian;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0;
 
+}
 /* skills 22222 */
 
 .wrap {
@@ -1180,6 +1183,19 @@ form {
 
 /* smaller meadia screens */
 @media only screen and (max-width: 767px) {
+  #friend_textarea{
+    width: 80%;
+    height: 100px;
+  }
+ #friend_logname{
+    width: 50px;
+ }
+  
+  form{
+    margin: 5px 10px;
+  }
+ 
+
   li {
     margin-top: 25px;
     margin-left: 15px;
@@ -1285,19 +1301,23 @@ form {
 
   button {
     padding: 0;
-    width: 60px;
+    margin:0;
+    width: fit-content;
   }
-
+  
+  button,a {
+    padding: 0;
+    margin:0;
+    width: fit-content;
+  }
+  
   .description {
     max-width: 100%;
     padding: 0 20px;
     margin-left: 8px;
     font-size: 14px;
   }
-
-
-
-
+  
   /*skills*/
   .skills {
     margin: 2% 5%;
@@ -1310,7 +1330,6 @@ form {
     flex-wrap: wrap;
     border: 2px solid red;
   }
-
 
   .lang {
     margin-left: 30px;
@@ -1348,26 +1367,29 @@ form {
     height: 100%;
     margin: 0 2%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 8px rgb(9, 214, 95);
+    box-shadow: 0 2px 5px 5px rgb(9, 214, 95);
     transition: transform 0.3s ease-in-out;
     border-bottom-right-radius: 100px;
     border-top-left-radius: 100px;
   }
 
   .center-wrap {
-
+    box-shadow: 3px 3px 15px 1px turquoise, -3px -5px 15px 1px turquoise;
     float: center;
     clear: both;
-    width: 250px;
+    width: 200px;
     padding: 1% 5%;
     margin: 0 10%;
     border: 3px solid turquoise;
     transform: translate3d(0, 10%, 35px);
     perspective: 100px;
   }
+form{
+  border:none;
+}
 
   .card-3d-wrap {
-    position: relative;
+   
     min-height: 400px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -1379,7 +1401,7 @@ form {
   }
 
   .card-3d-wrapper {
-    width: 300px;
+       width: 250px;
     height: 400px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -1390,8 +1412,8 @@ form {
   .card-front,
   .card-back {
 
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    
     background-color: #2a2b38;
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
     background-position: bottom center;
@@ -1403,23 +1425,33 @@ form {
     top: 0;
   }
 
-  textarea {
-    min-width: 100;
+  .cofee_1{
+    
+    padding:0;
+    z-index: -111;
+    height: 100px;
+    width: 150px;
+    margin-bottom: 0;
+    margin-top:-18px;
+    
   }
 
   .coffee {
+    position: relative;
     padding-top: 0;
     margin-top: 0;
-    height: 80px;
+    margin-bottom: 20px;
+    height: 70px;
   }
 
   .btn {
-    position: relative;
-    z-index: 900;
-    border-radius: 4px;
+   margin:0;
+  padding:0 2px;
+    border-radius: 10px;
     height: 34px;
     font-size: 13px;
-    font-weight: 200;
+    font-weight: 100;
+    z-index: 999;
   }
 
 
@@ -1500,9 +1532,9 @@ form {
   left: 0; transform-style: preserve-3d;
   transition: background 0.25s;
 }
-.scene { transform-style: preserve-3d;
+.scene {
+  transform-style: preserve-3d;
   transition: background 0.25s;
-
   position: absolute;
   top: 30%;
   left: 50%;
@@ -1717,6 +1749,7 @@ form {
 .wings__strobe--right {
   transform: translate3d(-50%, 0, calc(var(--base-size) * -1vmin));
 }
+
 .cloud {
   height: 10vmin;
   width: 15vmin;
