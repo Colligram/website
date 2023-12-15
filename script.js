@@ -10,6 +10,37 @@ function coffee1() {
   function coffee() {
     alert("Your support means the world! By buying me a coffee, you're helping fuel late-night coding sessions. Click OK to treat me to a virtual coffee and support my work!");
   }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+ 
+  var form = document.getElementById("lets_talk");
+
+
+  form.addEventListener("submit", function(event) {
+   
+    if (!isFormValid()) {
+     
+      event.preventDefault();
+    }
+  });
+
+  function isFormValid() {
+  
+  
+    var nameInput = document.getElementById("recruiter_logname");
+    var emailInput = document.getElementById("recruiter_logemail");
+
+    if (nameInput.value.trim() === "" || emailInput.value.trim() === "") {
+      alert("Please fill in all required fields.");
+      return false;
+    }
+    return true;
+  }
+});
+
+
 // // document.addEventListener("DOMContentLoaded", function () {
 // //   const BOUNDS = 50;
 
