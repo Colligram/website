@@ -845,9 +845,6 @@ svg {
 
 }
 
-form {
-  border: 3px solid;
-}
 
 .CONTAINER {
   --space: 2rem;
@@ -1331,19 +1328,15 @@ form {
     border: 2px solid red;
   }
 
-  .lang {
-    margin-left: 30px;
-    color: #c5d214;
-    font-size: 35px;
-    font-family: cursive;
-  }
-
   h3 {
-    margin-left: 10px;
-    font-size: 40px;
+    color: #c5d214;
+
+    font-family: cursive;
+    margin-left: 2px;
+    font-size: 20px;
     text-transform: uppercase;
-    word-spacing: 2px;
-    display: none;
+    word-spacing: normal;
+   
   }
 
   .skills p {
