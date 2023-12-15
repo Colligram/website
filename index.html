@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-<!--   <script  src="script.js"></script> -->
+ <script  src="script.js"></script> 
   <style>
     .checkbox-menu {
       visibility: hidden;
@@ -508,9 +508,9 @@
                   <input type="text" name="recruiter_logname" class="form-style" placeholder="Your Full Name please"
                     id="recruiter_logname"><br><br>
                   <input type="tel" name="telephone" class="form-style" placeholder="Phone number"
-                    id="recruiter_telephone" max="14"><br><br>
-                  <input type="number" name="budget" class="form-style" placeholder=" Projects budget (optional)"
-                    id="budget"><br><br>
+                    id="recruiter_telephone" ><br><br>
+                 <textarea name="recruiter_message" id="recruiter_textarea" class="form-style"
+                  placeholder="Hi there! Feel free to leave me a message here. I'll get back to you soon. If it's urgent, please consider calling directly. Thank you."></textarea><br><br>
                   <input type="email" name="recruiter_logemail" class="form-style"
                     placeholder="Your Email@example.domain" id="recruiter_logemail">
                 </div>
@@ -518,9 +518,7 @@
                   <input type="text" name="recruiter_mail_subject" class="form-style" value=""   
                     placeholder="SUBJECT" /><br><br>
                   <textarea name="recruiter_message" id="recruiter_textarea" rows="8" class="form-style"
-                    placeholder="Hi there! Feel free to leave me a message here.
-                    I'll get back to you soon. If it's urgent, please 
-                    consider calling directly. Thank you."></textarea><br><br>
+                    placeholder="Hi there! Feel free to leave me a message here. I'll get back to you soon. If it's urgent, please consider calling directly. Thank you."></textarea><br><br>
                 </div>
                 <input type="submit" class="btn mt-4" value="Send message">
 <!--                 <button type="submit" class="btn mt-4">Send message</button> -->
@@ -537,17 +535,17 @@
                 <div>
                   <input type="text" name="friend_logname" class="form-style" placeholder="Tell me your user_name"
                     id="friend_logname"><br><br>
-                  <textarea name="friend_message" id="friend_textarea" rows="8" cols="20" class="form-style"
-                    placeholder="Type the message here, I guess you wanna buy me a coffee"></textarea><br><br><br>
+                  <textarea name="friend_message" id="friend_textarea" class="form-style"
+                  placeholder="Type the message here, I guess you wanna buy me a coffee"></textarea><br><br><br>
                 </div>
-                <!-- buy me a coffee -->
-                <div class="coffee">
-                  <a onclick="coffee()" href="https://www.buymeacoffee.com/colligram">
-                    <img class="cofee_1" src="https://media0.giphy.com/media/513lZvPf6khjIQFibF/giphy.gif"
-                      alt="buy me a coffee" width="auto" height="150">
-                  </a>
-                </div>
-                <!-- buy me a coffee section-->
+                 <!-- buy me a coffee -->
+              <div class="coffee">
+                <a onclick="coffee()" href="https://www.buymeacoffee.com/colligram">
+                  <img class="cofee_1" src="https://media0.giphy.com/media/513lZvPf6khjIQFibF/giphy.gif"
+                    alt="buy me a coffee" width="auto" height="150">
+                </a>
+              </div><br>
+              <!-- buy me a coffee -->
                 <div>
 <!--                   <button type="submit" class="btn">Send message</button> -->
                   <input  onclick="coffee1()" type="submit" class="btn" value="Send message">
