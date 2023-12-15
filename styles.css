@@ -905,10 +905,8 @@ svg {
   background-size: 33.94px 33.94px; }
 
 .marquee1 {
-  float: center;
- 
-  margin-left:25%;
-  --duration: 10s;
+   min-width: 100%;
+   --duration: 10s;
   --gap: var(--space);
   display: flex;
   overflow: hidden;
