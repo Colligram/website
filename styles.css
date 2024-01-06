@@ -358,7 +358,8 @@ footer {
   background-color: rgb(67, 75, 181);
   color: black;
   height: 80px;
-  margin-bottom: 0;
+  margin: 0px auto;
+  
   bottom: 0;
   right: 0;
   left: 0;
@@ -1314,11 +1315,12 @@ svg {
   .hire_me1 {
     height: 35px !important;
     font-size: 10px !important;
-    margin: 0px 0px 0px 0px;
+    /*margin: 0px 0px 0px 0px;*/
   }
 
   .hire_me hire_me1 {
-    margin: 0px 0px 0px 0px;
+    /*margin: 0px 0px 0px 0px;*/
+  }
   }
 
   button {
