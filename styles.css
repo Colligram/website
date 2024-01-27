@@ -8,7 +8,9 @@
   padding: 0;
 }
 
-
+.anime{
+  display:none;
+}
 :root {
   --dark: 0;
   --base-size: 20;
