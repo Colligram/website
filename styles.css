@@ -170,7 +170,7 @@ button a {
   color: #fff;
 }
 
-.hire_me {
+.hire_me1 {
   margin-left: 20px;
   text-align: center;
   animation-name: movement;
@@ -180,7 +180,7 @@ button a {
   transition: 1s;
 }
 
-button {
+button ,.hire_me1 {
 
   padding: 10px 20px;
   background-color: #3498db;
@@ -197,7 +197,7 @@ button {
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
 
-button:hover {
+.hire_me1:hover {
   background-color: #270ee1;
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.2) inset;
