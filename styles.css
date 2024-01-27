@@ -8,9 +8,7 @@
   padding: 0;
 }
 
-.anime{
-  display:none;
-}
+
 :root {
   --dark: 0;
   --base-size: 20;
@@ -1208,6 +1206,9 @@ svg {
 
 /* smaller meadia screens */
 @media only screen and (max-width: 767px) {
+  .anime{
+  display:none;
+}
   #friend_textarea{
     width: 80%;
     height: 100px;
