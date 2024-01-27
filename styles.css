@@ -9,63 +9,6 @@
 }
 
 
-:root {
-  --dark: 0;
-  --base-size: 20;
-  --plane-height: calc(var(--base-size) * 1vmin);
-  --plane-width: calc(var(--plane-height) * 1.6);
-  --white-one: hsl(0, 0%, calc((90 - (var(--dark) * 30)) * 1%));
-  --white-two: hsl(0, 0%, calc((85 - (var(--dark) * 30)) * 1%));
-  --white-three: hsl(0, 0%, calc((80 - (var(--dark) * 30)) * 1%));
-  --white-four: hsl(0, 0%, calc((75 - (var(--dark) * 30)) * 1%));
-  --white-five: hsl(0, 0%, calc((70 - (var(--dark) * 30)) * 1%));
-  --accent-hue: 10;
-  --accent-one: hsl(
-    var(--accent-hue),
-    80%,
-    calc((60 - (var(--dark) * 20)) * 1%)
-  );
-  --accent-two: hsl(
-    var(--accent-hue),
-    80%,
-    calc((55 - (var(--dark) * 20)) * 1%)
-  );
-  --accent-three: hsl(
-    var(--accent-hue),
-    80%,
-    calc((50 - (var(--dark) * 20)) * 1%)
-  );
-  --accent-four: hsl(
-    var(--accent-hue),
-    80%,
-    calc((45 - (var(--dark) * 20)) * 1%)
-  );
-  --accent-five: hsl(
-    var(--accent-hue),
-    80%,
-    calc((40 - (var(--dark) * 20)) * 1%)
-  );
-  --screen: hsla(210, 80%, calc((70 - (var(--dark) * 20)) * 1%), 0.25);
-  --metal-one: hsl(0, 0%, calc((60 - (var(--dark) * 20)) * 1%));
-  --metal-two: hsl(0, 0%, calc((50 - (var(--dark) * 20)) * 1%));
-  --metal-three: hsl(0, 0%, calc((40 - (var(--dark) * 20)) * 1%));
-  --wheel-one: #1a1a1a;
-  --wheel-two: #0d0d0d;
-  --wheel-three: #000;
-  --wheel-hub: hsl(0, 0%, calc((98 - (var(--dark) * 20)) * 1%));
-  --bg: hsl(210, 80%, calc((90 - (var(--dark) * 76)) * 1%));
-  --night: #082949;
-  --cloud-one: hsl(0, 0%, calc((98 - (var(--dark) * 35)) * 1%));
-  --cloud-two: hsl(0, 0%, calc((94 - (var(--dark) * 35)) * 1%));
-  --cloud-three: hsl(0, 0%, calc((90 - (var(--dark) * 35)) * 1%));
-  --cloud-four: hsl(0, 0%, calc((86 - (var(--dark) * 35)) * 1%));
-  --cloud-five: hsl(0, 0%, calc((82 - (var(--dark) * 35)) * 1%));
-  --cloud-six: hsl(0, 0%, calc((78 - (var(--dark) * 35)) * 1%));
-}
-
-
-
-
 svg {
   background-color: transparent !important;
 }
