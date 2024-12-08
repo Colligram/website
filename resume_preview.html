@@ -9,36 +9,32 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
-          display: flex;
+      display: flex;
       position: relative;
       margin: 0;
-      overflow: hidden;
-      /* Prevent scroll bars */
+      overflow: hidden; /* Prevent scroll bars */
     }
 
     main {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%); /* Center horizontally */
       width: 80%;
-      height: 100vh;
-      /* Full viewport height */
-      box-sizing: border-box;
-  
+      height: 100vh; /* Full viewport height */
+      display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: center; /* Center vertically */
     }
 
     iframe {
       border: none;
-      /* Remove iframe border */
-/*       width: 99%;
-      height: 99%; */
+      width: 100%; /* Make iframe fill the main container */
+      height: 100%; /* Make iframe fill the main container */
     }
 
     footer {
       background-color: RGB(255,87,34);
-/*       color: RGB(0,0,0); */
       height: 80px;
       margin-bottom: 0;
       bottom: 0;
@@ -110,24 +106,16 @@
       }
     }
 
-    }
-
-
   </style>
 </head>
 
-<body style="background-color: color: RGB(0,0,0)">
+<body style="background-color: RGB(0,0,0)">
 
   <main>
     <span class="loader"></span>
-    <iframe 
-    src="https://drive.google.com/file/d/1BccmEONE6_5vCLPqD0dYQ8q47S1j23S9/preview" loading="lazy"
-<!--     width="80%" 
-    height="600px"  -->
-    style="border: none;">
-</iframe>
+    <iframe src="https://drive.google.com/file/d/1BccmEONE6_5vCLPqD0dYQ8q47S1j23S9/preview" loading="lazy"></iframe>
   </main>
-  <br /><br /><br /><br /><br />
+
   <footer>
     <p>Copyright &copy; 2025 | colligram-continental | All rights reserved</p>
   </footer>
