@@ -27,14 +27,14 @@
       display: flex;
       justify-content: center;
       align-items: center; /* Center vertically */
-      z-index: 1;
+      z-index: 1; /* Ensure the iframe stays on top of the footer */
     }
 
     iframe {
       border: none;
       width: 100%; /* Make iframe fill the main container */
       height: 100%; /* Make iframe fill the main container */
-      z-index: 1; /* Ensure iframe stays in front */
+      z-index: 1; /* Ensure iframe stays on top */
     }
 
     footer {
@@ -43,17 +43,16 @@
       position: fixed;
       left: 50%;
       transform: translateX(-50%); /* Center footer horizontally */
-      width: 80%; /* Set footer width to 80% */
+      width: 85%; /* Set footer width to slightly more than iframe */
       bottom: 0;
       text-align: center;
       padding-top: 6px;
-      z-index: 0; /* Footer is behind iframe */
-      opacity: 0; /* Start with the footer hidden */
-      transition: opacity 1s; /* Fade-in effect for footer */
+      z-index: -1; /* Footer is behind the iframe */
     }
 
     footer.show {
       opacity: 1; /* Make footer visible once the iframe is loaded */
+      transition: opacity 1s; /* Fade-in effect for footer */
     }
 
     .loader {
