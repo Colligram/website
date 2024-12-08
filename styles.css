@@ -155,9 +155,32 @@ input[type="email"] {
   margin-top: 5%;
 }
 
-.buttonblock {
+/* .buttonblock {
   display: flex;
   gap: 20px;
+} */
+.buttonblock {
+  display: flex;             /* Using flexbox to align buttons in a row */
+  justify-content: space-around; /* Distribute buttons evenly */
+  align-items: center;       /* Vertically center the buttons */
+  gap: 10px;                 /* Adds spacing between buttons */
+}
+
+.hire_me1 {
+  display: inline-block;    /* Make the link behave like a button */
+  padding: 10px 20px;       /* Set padding to make the buttons larger but equal size */
+  text-align: center;       /* Center the text inside the button */
+  background-color: #007BFF; /* Button background color */
+  color: white;             /* Text color */
+  text-decoration: none;    /* Remove underline */
+  border-radius: 5px;       /* Rounded corners */
+  width: 150px;             /* Set a fixed width for even button sizes */
+  box-sizing: border-box;   /* Ensure padding is included in the element's total width */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.hire_me1:hover {
+  background-color: #0056b3; /* Change background color on hover */
 }
 
 
@@ -170,7 +193,7 @@ button a {
   color: #fff;
 }
 
-.hire_me1 {
+/* .hire_me1 {
   margin-left: 20px;
   text-align: center;
   animation-name: movement;
@@ -178,9 +201,10 @@ button a {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transition: 1s;
-}
+} */
 
-button ,.hire_me1 {
+/* .hire_me1, */
+button {
 
   padding: 10px 5px;
   background-color: #3498db;
