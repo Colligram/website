@@ -27,12 +27,14 @@
       display: flex;
       justify-content: center;
       align-items: center; /* Center vertically */
+      z-index: 1;
     }
 
     iframe {
       border: none;
       width: 100%; /* Make iframe fill the main container */
       height: 100%; /* Make iframe fill the main container */
+      z-index: 1; /* Ensure iframe stays in front */
     }
 
     footer {
@@ -45,7 +47,13 @@
       bottom: 0;
       text-align: center;
       padding-top: 6px;
-      z-index: 1;
+      z-index: 0; /* Footer is behind iframe */
+      opacity: 0; /* Start with the footer hidden */
+      transition: opacity 1s; /* Fade-in effect for footer */
+    }
+
+    footer.show {
+      opacity: 1; /* Make footer visible once the iframe is loaded */
     }
 
     .loader {
@@ -115,13 +123,24 @@
   <main>
     <span class="loader"></span>
     <!-- Add '?embedded=true' to prevent auto zoom -->
-    <iframe src="https://drive.google.com/file/d/1BccmEONE6_5vCLPqD0dYQ8q47S1j23S9/preview?embedded=true" loading="lazy"></iframe>
+    <iframe 
+      src="https://drive.google.com/file/d/1BccmEONE6_5vCLPqD0dYQ8q47S1j23S9/preview?embedded=true" 
+      loading="lazy" 
+      onload="document.querySelector('footer').classList.add('show');"></iframe>
   </main>
 
   <footer>
     <p>Copyright &copy; 2025 | colligram-continental | All rights reserved</p>
   </footer>
 
+  <script>
+    // You can use this function to control the zoom in the iframe once it's loaded.
+    // However, Google Drive itself does not provide an easy way to control zoom via parameters.
+    document.querySelector('iframe').onload = function() {
+      document.querySelector('.loader').style.display = 'none'; // Hide the loader when the iframe is loaded
+      document.querySelector('footer').classList.add('show'); // Show the footer behind the iframe after loading
+    }
+  </script>
 </body>
 
 </html>
