@@ -13,6 +13,8 @@
       position: relative;
       margin: 0;
       overflow: hidden; /* Prevent scroll bars */
+      height: 100vh; /* Full viewport height */
+      flex-direction: column; /* Allow for vertical stacking of main and footer */
     }
 
     main {
@@ -21,7 +23,7 @@
       left: 50%;
       transform: translateX(-50%); /* Center horizontally */
       width: 80%;
-      height: 100vh; /* Full viewport height */
+      height: calc(100vh - 80px); /* Full viewport height minus footer height */
       display: flex;
       justify-content: center;
       align-items: center; /* Center vertically */
@@ -36,15 +38,14 @@
     footer {
       background-color: RGB(255,87,34);
       height: 80px;
-      margin-bottom: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
       position: fixed;
+      left: 50%;
+      transform: translateX(-50%); /* Center footer horizontally */
+      width: 80%; /* Set footer width to 80% */
+      bottom: 0;
       text-align: center;
       padding-top: 6px;
-      width: 80%;
-      z-index: -2;
+      z-index: 1;
     }
 
     .loader {
@@ -120,6 +121,7 @@
   <footer>
     <p>Copyright &copy; 2025 | colligram-continental | All rights reserved</p>
   </footer>
+
 </body>
 
 </html>
